@@ -5,8 +5,8 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %b %Y
     section Phase 1: Foundation & Setup
-    Research Proposal           :done, rp, 2025-10-01, 2025-10-12
-    Plan Hardware              :done, oh, 2025-10-01, 2025-10-07
+    Research Proposal           rp, 2025-10-01, 2025-10-12
+    Plan Hardware               oh, 2025-10-01, 2025-10-07
     Literature Review           :lr, 2025-10-06, 2025-11-02
     Instrument Testing          :it, 2025-10-15, 2025-11-18
     Progress Presentation       :milestone, pp, 2025-11-19, 2025-11-23
