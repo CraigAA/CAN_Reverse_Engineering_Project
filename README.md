@@ -6,15 +6,12 @@ gantt
     axisFormat  %b %Y
     section Phase 1: Foundation & Setup
     Research Proposal           :done, rp, 2025-10-01, 2025-10-12
-    Order Hardware              :done, oh, 2025-10-01, 2025-10-07
+    Plan Hardware              :done, oh, 2025-10-01, 2025-10-07
     Literature Review           :lr, 2025-10-06, 2025-11-02
-    Hardware Assembly           :ha, 2025-10-13, 2025-10-20
-    Instrument Testing          :it, 2025-10-21, 2025-11-10
-    Logging Software Dev        :ls, 2025-10-21, 2025-11-10
-    Bench Testing               :bt, 2025-11-11, 2025-11-18
+    Instrument Testing          :it, 2025-10-15, 2025-11-18
     Progress Presentation       :milestone, pp, 2025-11-19, 2025-11-23
 
-    section Phase 2: Summer Data Collection
+    section Phase 2: Data Collection
     Debug & Refinement          :dr, 2025-12-01, 2025-12-14
     Pilot Testing (3hrs)        :pt, 2025-12-08, 2025-12-21
     Atomic Tests - Stationary   :as, 2025-12-22, 2025-12-28
@@ -28,18 +25,9 @@ gantt
     Feature Engineering         :fe, 2026-02-23, 2026-03-08
     Baseline Models             :bm, 2026-03-02, 2026-03-08
     Classification Models (RQ2) :cm, 2026-03-09, 2026-03-29
-    Model Training & Tuning     :mt, 2026-03-16, 2026-03-29
-    Decoding Algorithms (RQ3)   :da, 2026-03-30, 2026-04-19
-    Bit-level Analysis          :ba, 2026-03-30, 2026-04-12
-    Confidence Scoring          :cs, 2026-04-13, 2026-04-19
-    Clustering & Semi-supervised:cl, 2026-04-20, 2026-05-03
+    Decoding Algorithms (RQ3)   :da, 2026-03-30, 2026-05-03
 
-    section Phase 4: Evaluation & Writing
-    Methodology Chapter (Draft) :mc, 2026-03-09, 2026-04-05
-    Comprehensive Evaluation    :ce, 2026-05-04, 2026-05-17
-    Results Analysis            :ra, 2026-05-04, 2026-05-10
-    Create Visualizations       :cv, 2026-05-11, 2026-05-17
-    Results Chapter             :rc, 2026-05-11, 2026-05-24
-    Discussion Chapter          :dc, 2026-05-18, 2026-05-28
-    Final Thesis Assembly       :milestone, fta, 2026-05-25, 2026-05-31
+    section Phase 4: Evaluation
+    Model Evaluation            :ce, 2026-03-09, 2026-05-17
+    Finish Project Report       :milestone, fta, 2026-05-25, 2026-05-31
 ```
