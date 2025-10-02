@@ -29,5 +29,6 @@ gantt
 
     section Phase 4: Evaluation
     Model Evaluation            :ce, 2026-03-09, 2026-05-17
+    Report Writing              :wr, 2026-03-09, 2026-05-31
     Finish Project Report       :milestone, fta, 2026-05-25, 2026-05-31
 ```
