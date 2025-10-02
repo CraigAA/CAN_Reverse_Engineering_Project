@@ -16,8 +16,8 @@ gantt
 
     section Phase 2:<br>Data Collection
     Code Data Pipeline          :dp, 2025-12-01, 2025-12-14
-    Data Collection             :dc, 2025-12-08, 2025-12-21
-    Data Cleaning & Sync        :dc, 2025-12-21, 2026-02-22
+    Data Collection             :dc, 2025-12-08, 2025-12-31
+    Data Cleaning & Sync        :dc, 2025-12-21, 2026-01-10
 
     section Phase 3:<br>Model Development
     Feature Engineering         :fe, 2026-02-23, 2026-03-08
