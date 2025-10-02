@@ -1,5 +1,5 @@
 # CAN_Reverse_Engineer_Project
-
+```mermaid
 gantt
     title CAN Bus Reverse Engineering Research Project
     dateFormat  YYYY-MM-DD
@@ -42,3 +42,4 @@ gantt
     Results Chapter             :rc, 2026-05-11, 2026-05-24
     Discussion Chapter          :dc, 2026-05-18, 2026-05-28
     Final Thesis Assembly       :milestone, fta, 2026-05-25, 2026-05-31
+```
