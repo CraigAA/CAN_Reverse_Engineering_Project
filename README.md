@@ -6,7 +6,7 @@ gantt
     axisFormat  %d %b %Y
     tickInterval 2week
     section Phase 1:<br>Proposal
-    Research Draft Proposal     :crit active, rp, 2025-10-01, 2025-10-10
+    Research Draft Proposal     :crit, active, rp, 2025-10-01, 2025-10-10
     Plan Hardware               :done, oh, 2025-10-02, 2025-10-05
     Finish Project Proposal     :milestone, frp, 2025-10-10, 2025-10-12
     Literature Review           :active, lr, 2025-10-01, 2025-11-02
