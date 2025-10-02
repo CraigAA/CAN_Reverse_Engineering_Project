@@ -4,7 +4,7 @@ gantt
     title CAN Bus Reverse Engineering Research Project
     dateFormat  YYYY-MM-DD
     axisFormat  %b %Y
-    tickInterval 1week
+    tickInterval 2week
     section Phase 1:<br>Proposal
     Research Proposal           :done, rp, 2025-10-01, 2025-10-12
     Plan Hardware               :done, oh, 2025-10-01, 2025-10-07
