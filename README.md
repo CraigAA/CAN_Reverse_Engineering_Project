@@ -25,7 +25,7 @@ gantt
     Classification Models (RQ2) :cm, 2026-03-09, 2026-03-29
     Decoding Algorithms (RQ3)   :da, 2026-03-30, 2026-05-03
 
-    section Phase 4: Evaluation
+    section Phase 4:<br>Evaluation<br>and Report
     Model Evaluation            :ce, 2026-03-09, 2026-05-17
     Report Writing              :wr, 2026-03-09, 2026-05-31
     Finish Project Report       :milestone, fta, 2026-05-25, 2026-05-31
