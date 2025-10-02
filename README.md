@@ -12,8 +12,8 @@ gantt
     Progress Presentation       :milestone, pp, 2025-11-19, 2025-11-23
 
     section Phase 2: Data Collection
-    Debug & Refinement          :dr, 2025-12-01, 2025-12-14
-    Pilot Testing (3hrs)        :pt, 2025-12-08, 2025-12-21
+    Code Data Pipeline          :dp, 2025-12-01, 2025-12-14
+    Data Collection             :pt, 2025-12-08, 2025-12-21
     Atomic Tests - Stationary   :as, 2025-12-22, 2025-12-28
     Atomic Tests - Analysis     :aa, 2025-12-29, 2026-01-04
     Atomic Tests - Dynamic      :ad, 2026-01-05, 2026-01-11
