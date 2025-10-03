@@ -3,7 +3,7 @@
 ## Research Objectives
 Develop and validate a multi-modal data collection and semi-automated labeling framework that reduces manual effort in CAN bus reverse engineering by enabling systematic identification and decoding of common vehicle signals.
 
-Create a high-quality, synchronized multi-modal dataset combining CAN bus logs, OBD-II telemetry, GPS data, and IMU measurements for automotive reverse engineering research
+Create a high-quality, synchronized multi-modal dataset combining CAN bus logs, timestamped video, periodic OBD-II messages, GPS data, and IMU measurements for automotive reverse engineering research
 Develop machine learning models that can classify CAN message types and decode signal values for labeled message classes with measurable confidence metrics
 
 ## Research Questions
