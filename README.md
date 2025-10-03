@@ -7,13 +7,13 @@ Create a high-quality, synchronized multi-modal dataset combining CAN bus logs, 
 Develop machine learning models that can classify CAN message types and decode signal values for labeled message classes with measurable confidence metrics
 
 ## Research Questions
-RQ1: Data Collection & Labeling Framework
-How effectively can multi-modal sensor data (GPS, IMU, OBD-II) be used to automatically generate labeled training data for CAN bus signals?
+1. Data Collection & Labeling Framework
+How effectively can multi-modal sensor data (video, GPS, IMU, OBD-II) be used to automatically generate labeled training data for CAN bus signals?
 
-RQ2: Automated Signal Classification
+2. Automated Signal Classification
 To what extent can machine learning models accurately classify CAN message IDs to their corresponding vehicle signals using semi-automatically labeled training data?
 
-RQ3: Signal Decoding Automation
+3. Signal Decoding Automation
 Primary: How accurately can signal encoding parameters (byte position, endianness, scaling, offset) be automatically extracted for classified CAN messages?
 
 ## Gantt Chart
