@@ -23,7 +23,7 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %d %b %Y
     tickInterval 2week
-    section Phase 1:<br>Proposal
+    section Phase 1:<br>Project A
     Research Draft Proposal     :crit, active, rp, 2025-10-01, 2025-10-10
     Plan Hardware               :done, oh, 2025-10-02, 2025-10-05
     Finish Project Proposal     :milestone, frp, 2025-10-10, 2025-10-12
@@ -32,12 +32,12 @@ gantt
     Instrument Testing          :it, 2025-10-15, 2025-11-18
     Progress Presentation       :milestone, pp, 2025-11-19, 2025-11-23
 
-    section Phase 2:<br>Data Collection
+    section Phase 2:<br>Data Collection<br>(Summer)
     Code Data Pipeline          :dp, 2025-11-18, 2025-12-14
     Data Collection             :dc, 2025-12-08, 2025-12-31
     Data Cleaning & Sync        :dc, 2025-12-21, 2026-01-10
 
-    section Phase 3:<br>Model Development
+    section Phase 3:<br>Model Development<br>(Project B)
     Feature Engineering         :fe, 2026-02-23, 2026-03-08
     Baseline Models             :bm, 2026-03-02, 2026-03-08
     Classification Models (RQ2) :cm, 2026-03-09, 2026-03-29
