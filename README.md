@@ -15,7 +15,7 @@ To what extent can machine learning models accurately classify CAN message IDs t
 
 3. Signal Decoding Automation
 Primary: How accurately can signal encoding parameters (byte position, endianness, scaling, offset) be automatically extracted for classified CAN messages?
-```
+```mermaid
 gantt
     title CAN Bus Reverse Engineering Research Project
     dateFormat  YYYY-MM-DD
