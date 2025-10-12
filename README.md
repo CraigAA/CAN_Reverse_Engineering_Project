@@ -17,7 +17,7 @@ To what extent can machine learning models accurately classify CAN message IDs t
 Primary: How accurately can signal encoding parameters (byte position, endianness, scaling, offset) be automatically extracted for classified CAN messages?
 ```mermaid
 gantt
-    title General Capstone Project Timeline
+    title Reverse Engineering Research Project
     dateFormat  YYYY-MM-DD
     axisFormat  %b %Y
     tickInterval 1month
