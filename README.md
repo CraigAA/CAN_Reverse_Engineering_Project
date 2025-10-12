@@ -22,7 +22,7 @@ gantt
     axisFormat  %b %Y
     tickInterval 1month
 
-    section Term 4 2025: <br>Project Part A
+    section Trimester 3 2025: <br>Project Part A
     Lit Review :crit, active, planning, 2025-10-12, 2025-11-01
     Develop & Finalize Data Pipeline :active, 2025-10-15, 2025-12-14
     Implement Baseline & Core Transformer :active, 2025-11-01, 2025-12-31
