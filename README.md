@@ -24,8 +24,8 @@ gantt
 
     section Term 4 2025: <br>Project Part A
     Lit Review :crit, active, planning, 2025-10-12, 2025-11-01
-    Develop & Finalize Data Pipeline :crit, active, pipeline, 2025-10-15, 2025-12-14
-    Implement Baseline & Core Transformer :crit, active, coredev, 2025-11-01, 2025-12-31
+    Develop & Finalize Data Pipeline , 2025-10-15, 2025-12-14
+    Implement Baseline & Core Transformer , 2025-11-01, 2025-12-31
     Progress Presentation          :milestone, pp, 2025-11-23, 1d
     
     %% ---Project Break from Late Jan to Mid-Feb ---
