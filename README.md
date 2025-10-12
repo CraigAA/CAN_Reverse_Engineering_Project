@@ -22,7 +22,7 @@ gantt
     axisFormat  %b %Y
     tickInterval 1month
 
-    section Trimester 3 2025: <br>Project Part A
+    section Trimester 3: <br>Project Part A
     Lit Review :crit, active, planning, 2025-10-12, 2025-11-01
     Develop & Finalize Data Pipeline :active, 2025-10-15, 2025-12-14
     Implement Baseline & Core Transformer :active, 2025-11-01, 2025-12-31
@@ -30,7 +30,7 @@ gantt
     
     %% ---Project Break from Late Jan to Mid-Feb ---
     
-    section Semester 1 2026: <br>Project Part B
+    section Semester 1: <br>Project Part B
     Perform Core Comparative Analysis :active, cca, 2026-02-17, 2026-03-09
     Advanced Research & Stretch Goals  :active, stretch, 2026-03-10, 2026-04-06
     Final Report Writing & Submission  :crit, active, report, 2026-04-07, 2026-04-27
