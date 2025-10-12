@@ -22,17 +22,15 @@ gantt
     axisFormat  %b %Y
     tickInterval 1month
 
-    section Term 4 2025: Foundation & Planning
-    Finalise Proposal & Lit Review :crit, active, planning, 2025-10-08, 2025-11-09
-    Develop & Finalize Data Pipeline :crit, active, pipeline, 2025-10-13, 2025-12-14
+    section Term 4 2025: <br>Project Part A
+    Lit Review :crit, active, planning, 2025-10-12, 2025-11-01
+    Develop & Finalize Data Pipeline :crit, active, pipeline, 2025-10-15, 2025-12-14
+    Implement Baseline & Core Transformer :crit, active, coredev, 2025-11-01, 2025-12-31
     Progress Presentation          :milestone, pp, 2025-11-23, 1d
-
-    section Summer Term: Core Development
-    Implement Baseline & Core Transformer :crit, active, coredev, 2025-12-15, 2026-01-26
     
-    %% --- Note: Project Break from Late Jan to Mid-Feb ---
+    %% ---Project Break from Late Jan to Mid-Feb ---
     
-    section Term 1 2026: Advanced Research & Finalization
+    section Semester 1 2026: <br>Project Part B
     Perform Core Comparative Analysis :active, cca, 2026-02-17, 2026-03-09
     Advanced Research & Stretch Goals  :active, stretch, 2026-03-10, 2026-04-06
     Final Report Writing & Submission  :crit, active, report, 2026-04-07, 2026-04-27
