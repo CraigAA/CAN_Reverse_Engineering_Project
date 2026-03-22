@@ -1,40 +1,100 @@
+WRX_Ground_Labels = {
+    # -------------------------------------------------------------
+    # ID 140: Accelerator Pedal
+    # accelerator pedal at B6 & B7 (Python Byte 5 & 6)
+    # -------------------------------------------------------------
+    '140': [  # Byte 0-4 (Spare)
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              # Byte 5 (Markdown B6 - Accelerator Pedal)
+              1, 1, 1, 1, 1, 1, 1, 1,
+              # Byte 6 (Markdown B7 - Accelerator Pedal)
+              1, 1, 1, 1, 1, 1, 1, 1,
+              # Byte 7 (Spare)
+              0, 0, 0, 0, 0, 0, 0, 0 ],
 
+    # -------------------------------------------------------------
+    # ID 152: Brakes, Lights, Wipers, Turn Signals
+    # -------------------------------------------------------------
+    '152': [  # Byte 0-5 (Spare/Unknown)
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              # Byte 6 (Markdown B7 - Brake/Parking Brake)
+              # Bits 3 & 4 (0x08, 0x10, 0x18)
+              0, 0, 0, 1, 1, 0, 0, 0,
+              # Byte 7 (Markdown B8 - Lights/Turn/Wipers)
+              # Utilizes bits 2 through 7 for stalks
+              2, 2, 2, 2, 2, 2, 0, 0 ],
 
-Known_bit_labels = [  # 64 per-bit classes (one per bit position)
-                     # Byte 0 (Sensor)
-                     3, 3, 3, 3, 3, 3, 3, 3,
-                     # Byte 1 (Sensor)
-                     3, 3, 3, 3, 3, 3, 3, 3,
-                     # Byte 2 (Spare)
-                     0, 0, 0, 0, 0, 0, 0, 0,
-                     # Byte 3 (Spare, Counter, Spare)
-                     0, 0, 0, 0, 2, 2, 2, 0,
-                     # Byte 4 (Checksum)
-                     1, 1, 1, 1, 1, 1, 1, 1,
-                     # Byte 5 (Spare)
-                     0, 0, 0, 0, 0, 0, 0, 0,
-                     # Byte 6 (Spare)
-                     0, 0, 0, 0, 0, 0, 0, 0,
-                     # Byte 7 (Spare)
-                     0, 0, 0, 0, 0, 0, 0, 0]
+    # -------------------------------------------------------------
+    # ID 0D1: Vehicle Speed and Brake Pressure
+    # -------------------------------------------------------------
+    '0D1': [  # Byte 0 (Markdown B1 - Vehicle Speed)
+              1, 1, 1, 1, 1, 1, 1, 1,
+              # Byte 1 (Markdown B2 - Vehicle Speed)
+              1, 1, 1, 1, 1, 1, 1, 1,
+              # Byte 2 (Markdown B3 - Brake Pedal Pressure)
+              2, 2, 2, 2, 2, 2, 2, 2,
+              # Byte 3-7 (Spare)
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0 ],
 
-Known_frames = {
-    # CAN ID 140: field layout is stable; counter/sensor values change per payload.
-    "140#0009FD4300000D00": Known_bit_labels,
-    "140#000AFD4300000D00": Known_bit_labels,
-    "140#000BFD4300000D00": Known_bit_labels,
-    "140#000CFD4300000D00": Known_bit_labels,
-    "140#000DFD4300000D00": Known_bit_labels,
-    "140#000EFD4300000D00": Known_bit_labels,
-    "140#000FF94300000D00": Known_bit_labels,
-    "140#0000F84300000D00": Known_bit_labels,
-    "140#0001F84300000D00": Known_bit_labels,
-    "140#0002F64300000D00": Known_bit_labels,
-    "140#0003F44300000D00": Known_bit_labels,
-    "140#0004F44300000D00": Known_bit_labels,
-    "140#0005F04300000D00": Known_bit_labels,
-    "140#0006EF4300000D00": Known_bit_labels,
-    "140#0007EF4300000D00": Known_bit_labels,
+    # -------------------------------------------------------------
+    # ID 0D4: Individual Wheel Speeds
+    # -------------------------------------------------------------
+    '0D4': [  # Byte 0, 1 (LF Wheel Speed)
+              1, 1, 1, 1, 1, 1, 1, 1,
+              1, 1, 1, 1, 1, 1, 1, 1,
+              # Byte 2, 3 (RF Wheel Speed)
+              2, 2, 2, 2, 2, 2, 2, 2,
+              2, 2, 2, 2, 2, 2, 2, 2,
+              # Byte 4, 5 (LR Wheel Speed)
+              3, 3, 3, 3, 3, 3, 3, 3,
+              3, 3, 3, 3, 3, 3, 3, 3,
+              # Byte 6, 7 (RR Wheel Speed)
+              4, 4, 4, 4, 4, 4, 4, 4,
+              4, 4, 4, 4, 4, 4, 4, 4 ],
+
+    # -------------------------------------------------------------
+    # ID 375: Door Lock and Open State
+    # -------------------------------------------------------------
+    '375': [  # Byte 0 (Lock State - Bits 0, 1)
+              0, 0, 0, 0, 0, 0, 1, 1,
+              # Byte 1 (Open State - Bits 0, 1, 2, 3, 5)
+              0, 0, 2, 0, 2, 2, 2, 2,
+              # Byte 2-7 (Spare)
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0 ],
+
+    # -------------------------------------------------------------
+    # ID 281: Climate Control
+    # -------------------------------------------------------------
+    '281': [  # Byte 0 (Fan Speed & Direction)
+              # Bits 4-7 for fan, 2-3 for direction
+              1, 1, 1, 1, 1, 1, 0, 0,
+              # Byte 1 (Auto Modes)
+              # Bits 2-7 used for AC/Defrost/Recirc
+              2, 2, 2, 2, 2, 2, 0, 0,
+              # Byte 2 (Temperature)
+              3, 3, 3, 3, 3, 3, 3, 3,
+              # Byte 3-7 (Spare)
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0 ],
 }
-
-
