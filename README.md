@@ -16,23 +16,23 @@ To what extent can machine learning models accurately classify CAN message IDs t
 3. Signal Decoding Automation
 Primary: How accurately can signal encoding parameters (byte position, endianness, scaling, offset) be automatically extracted for classified CAN messages?
 ```mermaid
-gantt
-    title Reverse Engineering Research Project
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %Y
-    tickInterval 1month
+flowchart TD
 
-    section Trimester 3: <br>Project Part A
-    Lit Review :crit, active, planning, 2025-10-12, 2025-11-01
-    Develop & Finalize Data Pipeline :active, 2025-10-15, 2025-12-14
-    Implement Baseline & Core Transformer :active, 2025-11-01, 2025-12-31
-    Progress Presentation          :milestone, pp, 2025-11-23, 1d
-    
-    %% ---Project Break from Late Jan to Mid-Feb ---
-    
-    section Semester 1: <br>Project Part B
-    Perform Core Comparative Analysis :active, cca, 2026-02-17, 2026-03-09
-    Advanced Research & Stretch Goals  :active, stretch, 2026-03-10, 2026-04-06
-    Final Report Writing & Submission  :crit, active, report, 2026-04-07, 2026-04-27
-    Final Presentation                 :milestone, fpp, 2026-04-30, 1d
+    A[Raw CAN Log CSV<br/>(timestamp, bus, raw_frame)] --> B[Filter rows by CAN ID<br/>(regex match "^ID#")]
+    B --> C[Extract payload hex<br/>(split at '#')]
+    C --> D[Convert hex → 64-bit vector<br/>(int → bin → list)]
+    D --> E[bit_data array<br/>(N × 64 bits, int8)]
+    E --> F[Compute window start indices<br/>(0, stride, 2×stride...)]
+    F --> G[Build samples list<br/>(array_id, start_idx pairs)]
+
+    G --> H[CANClassificationDataset]
+
+    H --> I[__getitem__(idx)]
+    I --> I1[Slice 200-frame window]
+    I --> I2[Load base label vector for CAN ID]
+    I --> I3[Compute static_mask via peak-to-peak]
+    I --> I4[Zero out labels where bits never change]
+    I --> I5[Return (window_tensor, label_tensor)]
+
+    H --> J[PyTorch DataLoaders<br/>(train / val / test)]
 ```
